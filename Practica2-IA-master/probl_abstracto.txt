@@ -1,0 +1,17 @@
+PROBLEMA DE ANÁLISIS
+CLASIFICACIÓN HEURUSTICA
+
+PROBLEMA ABSTRACTO:
+Si idm >= 30 entonces costrucción = obeso
+Si 25 <= idm < 30 entonces costrucción = sobrepeso
+Si 18,5 <= idm < 25 entonces costrucción = normopeso
+Si idm < 18,5 entonces costrucción = bajo peso
+
+SI abuso_sal = true Y consumo_agua = bajo Y (consumo_fruta OR consumo_verdura) = (muy_bajo OR bajo) Y consumo_grasas = alto ENTONCES calidad_dieta = baja
+SI abuso_sal = false Y consumo_agua != bajo Y (consumo_fruta Y consumo_verdura) = normal Y (consumo_carbohid Y consumo_prot) != (muy_bajo, bajo) Y consumo_grasas != alto ENTONCES calidad_dieta = normal
+SI abuso_sal = false Y consumo_agua != bajo Y (consumo_fruta Y consumo_verdura) = elevado Y (consumo_carbohid Y consumo_prot) != (muy_bajo, bajo) Y consumo_grasas = bajo ENTONCES calidad_dieta = buena
+
+Si costrucción = obeso OR costrucción= bajo peso ENTONCES dificultad_entren = baja
+Si frecuencia = baja y duracion baja ENTONCES dificultad_entren = baja
+Si costrucción = (normopeso OR sobrepeso) Y frecuencia_act = media duración = media ENTONCES dificultad_entren = media
+Si frecuencia = alta Y duración = alta Y levantamiento_peso = true Y esfuerzo_musc = true ENTONCES dificultad_entren = alta

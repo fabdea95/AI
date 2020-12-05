@@ -1,0 +1,1417 @@
+; Mon May 18 20:32:51 CEST 2020
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Ontologia_Practica2_IA_Class10000] of  Aerobicos
+
+	(aparato cinta)
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20012]
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Correr")
+	(num_calorias 700)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class4])
+	(tiempo_max 30)
+	(tiempo_min 5)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20001]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20001] of  Objetivo
+
+	(descripcion_obj "Perder peso"))
+
+([Ontologia_Practica2_IA_Class20002] of  Objetivo
+
+	(descripcion_obj "Aumentar masa muscular"))
+
+([Ontologia_Practica2_IA_Class20003] of  Objetivo
+
+	(descripcion_obj "Aumentar flexibilidad"))
+
+([Ontologia_Practica2_IA_Class20004] of  Aerobicos
+
+	(aparato bicicleta_electrica)
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20016]
+		[Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Bicicleata estatica")
+	(num_calorias 500)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(tiempo_max 30)
+	(tiempo_min 5)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20001]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20005] of  Aerobicos
+
+	(aparato bicicleta_electrica)
+	(dificultad media)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Bicicleta eliptica")
+	(num_calorias 650)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(tiempo_max 30)
+	(tiempo_min 5)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20001]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20006] of  Aerobicos
+
+	(aparato remo)
+	(dificultad alta)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20012]
+		[Ontologia_Practica2_IA_Class20007]
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20009]
+		[Ontologia_Practica2_IA_Class20016]
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20010]
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Remo")
+	(num_calorias 400)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class3])
+	(tiempo_max 30)
+	(tiempo_min 5)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20001]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20007] of  Grupo_muscular
+
+	(nombre "Biceps"))
+
+([Ontologia_Practica2_IA_Class20008] of  Grupo_muscular
+
+	(nombre "Triceps"))
+
+([Ontologia_Practica2_IA_Class20009] of  Grupo_muscular
+
+	(nombre "Espalda"))
+
+([Ontologia_Practica2_IA_Class20010] of  Grupo_muscular
+
+	(nombre "Hombro"))
+
+([Ontologia_Practica2_IA_Class20011] of  Grupo_muscular
+
+	(nombre "Pecho"))
+
+([Ontologia_Practica2_IA_Class20012] of  Grupo_muscular
+
+	(nombre "Abdominales"))
+
+([Ontologia_Practica2_IA_Class20013] of  Grupo_muscular
+
+	(nombre "Gluteo"))
+
+([Ontologia_Practica2_IA_Class20014] of  Grupo_muscular
+
+	(nombre "Cuadriceps"))
+
+([Ontologia_Practica2_IA_Class20015] of  Grupo_muscular
+
+	(nombre "Biceps Femoral"))
+
+([Ontologia_Practica2_IA_Class20016] of  Grupo_muscular
+
+	(nombre "Gemelo"))
+
+([Ontologia_Practica2_IA_Class20018] of  Aerobicos
+
+	(aparato soga)
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20007])
+	(nombre_ejercicio "Curl de bíceps en polea baja")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20019] of  Fuerza_resistencia
+
+	(aparato barra)
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Tríceps en polea superior")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20020] of  Fuerza_resistencia
+
+	(aparato soga)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Tríceps en polea superior")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20021] of  Fuerza_resistencia
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20011])
+	(nombre_ejercicio "Maquina contractora")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20022] of  Aerobicos
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20011])
+	(nombre_ejercicio "Cruce de poleas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20023] of  Fuerza_resistencia
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20012])
+	(nombre_ejercicio "Crunch en maquina")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20024] of  Aerobicos
+
+	(dificultad media)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "Peso muerto en polea baja")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20025] of  Aerobicos
+
+	(dificultad media)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Extensiones de cadera en polea baja")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20026] of  Aerobicos
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20012])
+	(nombre_ejercicio "Rueda abdominal")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class2])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20028] of  Objetivo
+
+	(descripcion_obj "Definicion"))
+
+([Ontologia_Practica2_IA_Class20029] of  Aerobicos
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Prensa de piernas")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20030] of  Aerobicos
+
+	(dificultad media)
+	(edad_min 5)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Extension de Cuadriceps")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20031] of  Aerobicos
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Extensiones de gemelo de pie en máquina")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20033] of  Aerobicos
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Máquina de press de hombros")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20034] of  Aerobicos
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Dominadas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(repeticiones_max 10)
+	(repeticiones_min 3)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20035] of  Fuerza_resistencia
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Prensa de hombros con mancuerna")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20036] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Vuelos Laterales")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20037] of  Fuerza_resistencia
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20007])
+	(nombre_ejercicio "Flexiones de biceps")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20038] of  Fuerza_resistencia
+
+	(aparato barra)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20007])
+	(nombre_ejercicio "Curl de biceps con barra Z")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20039] of  Fuerza_resistencia
+
+	(aparato pesas)
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Peso Muerto")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20040] of  Fuerza_resistencia
+
+	(aparato pesas)
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Hip Thrust")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20041] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Remo con mancuernas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20042] of  Fuerza_resistencia
+
+	(aparato pesas)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Apertura de espalda")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20043] of  Fuerza_resistencia
+
+	(aparato barra)
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Elevacion de gemelos parado con barra")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20044] of  Fuerza_resistencia
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Elevacion de gemelos sentado")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20045] of  Fuerza_resistencia
+
+	(aparato pesas)
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "Zancadas adelante")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20046] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "sentadilla libre con mancuernas")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20047] of  Fuerza_resistencia
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20011])
+	(nombre_ejercicio "Prensa de pecho en Banco")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20048] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20011])
+	(nombre_ejercicio "Press de banca inclinado con mancuernas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20049] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Sentadillas con mancuernas")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20050] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Estocadas inversas con mancuernas")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 5)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20051] of  Fuerza_resistencia
+
+	(aparato mancuerna)
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Patada de Burro de Tríceps con mancuerna")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20052] of  Fuerza_resistencia
+
+	(aparato pesas)
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Extensiones de triceps (a dos brazos)")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20053] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20012])
+	(nombre_ejercicio "Pose de la cobra")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(tiempo_max 3)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20054] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20012])
+	(nombre_ejercicio "Curvas laterales de pie")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class6])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20055] of  Estiramiento
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Estiramiento de cadena de apertura")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20056] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Estiramiento de isquiotibiales con apoyo en lumbares")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20057] of  Precalentamiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Flexión de la pierna hacia atrás")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20058] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Flexion de cuadriceps sentado sobre los talones")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20059] of  Estiramiento
+
+	(dificultad media)
+	(edad_min 1)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Flexion de cuadriceps sentado sobre una pierna")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20060] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Flexion de cuadriceps con apoyo de la pierna")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20061] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "La \"concha\"")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20062] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Estiramiento del gato")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20063] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Elevación de pelvis")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class2])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20003]
+		[Ontologia_Practica2_IA_Class20064]))
+
+([Ontologia_Practica2_IA_Class20064] of  Objetivo
+
+	(descripcion_obj "Aliviar dolor"))
+
+([Ontologia_Practica2_IA_Class20065] of  Precalentamiento
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Estiramiento espinal")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20066] of  Precalentamiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Estiramiento de gemelos: contra la pared")
+	(num_calorias 20)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20067] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Ejercicio de estiramiento de los gemelos: de puntillas")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20068] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "Estiramiento de gluteo con rodillo en posicion supina")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20069] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "Estiramiento de gluteo acostado")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20070] of  Precalentamiento
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20011]
+		[Ontologia_Practica2_IA_Class20007])
+	(nombre_ejercicio "Estiramiento de bíceps braquial")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20071] of  Precalentamiento
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Estiramiento del músculo tríceps del brazo")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20072] of  Precalentamiento
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20008]
+		[Ontologia_Practica2_IA_Class20007]
+		[Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Estiramiento global de hombro y brazos")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20073] of  Estiramiento
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20007]
+		[Ontologia_Practica2_IA_Class20011]
+		[Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Apertura de brazos en una puerta")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20064]
+		[Ontologia_Practica2_IA_Class20003]))
+
+([Ontologia_Practica2_IA_Class20074] of  Suelo
+
+	(dificultad alta)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20007]
+		[Ontologia_Practica2_IA_Class20008]
+		[Ontologia_Practica2_IA_Class20010]
+		[Ontologia_Practica2_IA_Class20012]
+		[Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Mountain climbers")
+	(num_calorias 100)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class4])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20001]))
+
+([Ontologia_Practica2_IA_Class20075] of  Suelo
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20012]
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20016]
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Salto con elevación de rodillas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20001]))
+
+([Ontologia_Practica2_IA_Class20076] of  Suelo
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20012]
+		[Ontologia_Practica2_IA_Class20010]
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Jumpin Jack")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class3])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20001]))
+
+([Ontologia_Practica2_IA_Class20078] of  Suelo
+
+	(dificultad alta)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20012]
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20015]
+		[Ontologia_Practica2_IA_Class20016]
+		[Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "Skipping en el sitio")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class4]
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20001]))
+
+([Ontologia_Practica2_IA_Class20080] of  Suelo
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20012])
+	(nombre_ejercicio "Plancha abdominal")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class6])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20081] of  Suelo
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20012])
+	(nombre_ejercicio "Crunches tradicionales")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 25)
+	(repeticiones_min 10)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20082] of  Suelo
+
+	(dificultad media)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20007]
+		[Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Flexiones en V")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20083] of  Suelo
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Puente con piernas muy juntas")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20084] of  Suelo
+
+	(dificultad media)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20008]
+		[Ontologia_Practica2_IA_Class20013])
+	(nombre_ejercicio "Puente isométrico con una pierna")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20085] of  Suelo
+
+	(dificultad alta)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20013]
+		[Ontologia_Practica2_IA_Class20015])
+	(nombre_ejercicio "Peso muerto con una pierna")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20087] of  Suelo
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Sentadilla Isométrica")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20088] of  Suelo
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20014])
+	(nombre_ejercicio "Sentadillas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class5]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20089] of  Suelo
+
+	(dificultad media)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Puente invertido")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class1]
+		[Ontologia_Practica2_IA_dea_Class0])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20090] of  Suelo
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20009])
+	(nombre_ejercicio "Nadadores")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class2]
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class0]
+		[Ontologia_Practica2_IA_dea_Class1])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20028]
+		[Ontologia_Practica2_IA_Class20002]))
+
+([Ontologia_Practica2_IA_Class20092] of  Suelo
+
+	(dificultad alta)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Paseo del pato")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5])
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20093] of  Suelo
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20014]
+		[Ontologia_Practica2_IA_Class20016])
+	(nombre_ejercicio "Saltos en puntas de pie")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class6]
+		[Ontologia_Practica2_IA_dea_Class5])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20094] of  Suelo
+
+	(dificultad baja)
+	(ejercita [Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Remo horizontal isométrico")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20095] of  Suelo
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Flexiones con agarre ancho")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20096] of  Suelo
+
+	(dificultad media)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20010]
+		[Ontologia_Practica2_IA_Class20008]
+		[Ontologia_Practica2_IA_Class20011])
+	(nombre_ejercicio "Flexiones")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20097] of  Suelo
+
+	(dificultad alta)
+	(ejercita [Ontologia_Practica2_IA_Class20008])
+	(nombre_ejercicio "Flexiones en diamante")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20098] of  Suelo
+
+	(dificultad baja)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20011]
+		[Ontologia_Practica2_IA_Class20008]
+		[Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Flexiones inclinadas")
+	(num_calorias 50)
+	(puede_contraindicar
+		[Ontologia_Practica2_IA_dea_Class3]
+		[Ontologia_Practica2_IA_dea_Class6])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_Class20099] of  Suelo
+
+	(dificultad alta)
+	(ejercita
+		[Ontologia_Practica2_IA_Class20008]
+		[Ontologia_Practica2_IA_Class20011]
+		[Ontologia_Practica2_IA_Class20010])
+	(nombre_ejercicio "Fondos")
+	(num_calorias 50)
+	(puede_contraindicar [Ontologia_Practica2_IA_dea_Class3])
+	(repeticiones_max 15)
+	(repeticiones_min 5)
+	(tiempo_max 5)
+	(tiempo_min 1)
+	(tiene_ob
+		[Ontologia_Practica2_IA_Class20002]
+		[Ontologia_Practica2_IA_Class20028]))
+
+([Ontologia_Practica2_IA_dea_Class0] of  Problema_salud
+
+	(malestar escoliosis))
+
+([Ontologia_Practica2_IA_dea_Class1] of  Problema_salud
+
+	(malestar lordosis))
+
+([Ontologia_Practica2_IA_dea_Class2] of  Problema_salud
+
+	(malestar cifosis))
+
+([Ontologia_Practica2_IA_dea_Class3] of  Problema_salud
+
+	(malestar tendinitis_hombro))
+
+([Ontologia_Practica2_IA_dea_Class4] of  Problema_salud
+
+	(malestar cervical))
+
+([Ontologia_Practica2_IA_dea_Class5] of  Problema_salud
+
+	(malestar dolor_articular))
+
+([Ontologia_Practica2_IA_dea_Class6] of  Problema_salud
+
+	(malestar dolor_espalda))

@@ -1,0 +1,890 @@
+; Mon May 18 20:32:51 CEST 2020
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot consumo_fruta
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sensacion_cansancio
+;+		(comment "despues de realizar 10 minutos de ejercicio")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Intensidad_inicial
+;+		(comment "intensidad inicial de ejercicio al que el usuario está acostumbrado")
+		(type SYMBOL)
+		(allowed-values baja media alta)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cifosis
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_verduras
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot abuso_sal
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad_max
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiene
+		(type INSTANCE)
+;+		(allowed-classes Salud)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot desplazamiento_pie
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot descripcion
+;+		(comment "detalle del ejercicio")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dolor_lumbar
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dia_semana
+;+		(comment "A que dia de la semana pertenece esa secuencia. Deben haber dias para descansar")
+		(type SYMBOL)
+		(allowed-values lunes martes miercoles jueves viernes sabado domingo)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dolor_articular
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiempo_min
+;+		(comment "tiempo en minutos")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot lavar_platos
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre_ejercicio
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot dolor_cervical
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot tiene_ob
+		(type INSTANCE)
+;+		(allowed-classes Objetivo)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot compra_pie
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot num_calorias
+;+		(comment "número de calorías estimadas a perder con el ejercicio")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot secuencia_descanso
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot combina_con
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercita
+		(type INSTANCE)
+;+		(allowed-classes Grupo_muscular)
+		(create-accessor read-write))
+	(single-slot KB_607616_Class27
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot IMC
+;+		(comment "indice de masa corporal calculado")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tendinitis_hombro
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Ontologia_Practica2_IA_Class10001
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot escoliosis
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiene_o
+		(type INSTANCE)
+;+		(allowed-classes Objetivo)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot aparato
+		(type SYMBOL)
+		(allowed-values bicicleta_electrica footer pesas soga mancuerna cinta remo barra)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot paseos
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dificultad_ejercicio
+;+		(comment "referente a la dificultad de la persona para hacer ejercicio dependiendo de su salud")
+		(type SYMBOL)
+		(allowed-values alta media baja)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot tiene_h
+		(type INSTANCE)
+;+		(allowed-classes Habito)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot tiempo_max
+;+		(comment "tiempo max en minutos")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_agua
+		(type SYMBOL)
+		(allowed-values muy_poco poco frecuente)
+		(default frecuente)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot kg_pesas
+;+		(comment "kilogramos en las pesas")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot desplazamientos
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad_min
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot es_recomendado
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cocinar
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot lordosis
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_proteina
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot altura
+;+		(comment "altura en centimetros")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot parte_de_2
+		(type INSTANCE)
+;+		(allowed-classes Secuencia)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot trote
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parte_de_1
+		(type INSTANCE)
+;+		(allowed-classes Programa)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parte_de_4
+		(type INSTANCE)
+;+		(allowed-classes Salud)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dificultad
+		(type SYMBOL)
+		(allowed-values baja media alta)
+		(default media)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot parte_de_3
+		(type INSTANCE)
+;+		(allowed-classes Salud)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot presion_sanguinea_min
+;+		(comment "los valores de la presion sanguinea estan dados en mmHg (milimetros de mercurio)")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot relativo_a
+		(type INSTANCE)
+;+		(allowed-classes Grupo_muscular)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot intensidad_inicial
+;+		(comment "Nivel de Intensidad inicial de ejercicio al que el usuario está acostumbrado. Depende de sus habitos")
+		(type SYMBOL)
+		(allowed-values baja media alta)
+		(default baja)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot puede_contraindicar
+		(type INSTANCE)
+;+		(allowed-classes Problema_salud)
+		(create-accessor read-write))
+	(single-slot lavar_ropa
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot solicita
+		(type INSTANCE)
+;+		(allowed-classes Programa)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot repeticiones_max
+;+		(comment "numero de repeticiones maximo del ejercicio")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peso
+;+		(comment "peso en kilogramos")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tipo
+		(type SYMBOL)
+		(allowed-values calentamiento intermedio enfriamiento)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tareas_domesticas
+;+		(comment "actividades como planchar, barrer, fregar, colada")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot planchar
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot duracion
+;+		(comment "duracion aproximada en minutos del habito")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot malestar
+		(type SYMBOL)
+		(allowed-values escoliosis lordosis cifosis tendinitis_hombro dolor_articular cervical dolor_espalda)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot apoyo
+;+		(comment "algún tipo de apoyo como una mesa, pared, el suelo mismo")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sentado
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tipo_pesas
+		(type SYMBOL)
+		(allowed-values fijas ajustables kettlebell)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot frecuencia
+		(type SYMBOL)
+		(allowed-values ocasional frecuente pocas_veces)
+		(default frecuente)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercita2
+		(type SYMBOL)
+;+		(allowed-parents Grupo_muscular)
+		(create-accessor read-write))
+	(single-slot levantamiento_peso
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_carbohidratos
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PPM2
+;+		(comment "pulsaciones por minuto despues un minuto de carrera sostenida")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PPM1
+;+		(comment "pulsaciones por minuto en reposo")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot barrer
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot inverse_of_parte_de
+		(type INSTANCE)
+;+		(allowed-classes Secuencia)
+		(create-accessor read-write))
+	(single-slot paseo_mascota
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot esfuerzo_musc
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Ontologia_Practica2_IA_Class0
+		(type SYMBOL)
+;+		(allowed-parents)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot genero
+		(type SYMBOL)
+		(allowed-values femenino masculino)
+		(default masculino)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot descripcion_obj
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_gaseosa
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiempo_diario
+;+		(comment "tiempo diario en minutos")
+		(type INTEGER)
+		(range 30 1400)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_picante
+		(type SYMBOL)
+		(allowed-values nunca_o_muy_poco frecuente mucho)
+		(default nunca_o_muy_poco)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot presion_sanguinea_max
+;+		(comment "los valores de la presion sanguinea estan dados en mmHg (milimetros de mercurio)")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dolor_espalda
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot repeticiones_min
+;+		(comment "numero de repeticiones minimas del ejercicio")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot consumo_grasa
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot mov_repet
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot act_estaticas
+;+		(comment "actividades como mirar television, lectura, chat, juegos en linea")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tirantez_muscular
+;+		(comment "despues de realizar 10 minutos de ejercicio")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot de_pie
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Persona
+	(is-a USER)
+	(role concrete)
+	(single-slot presion_sanguinea_min
+;+		(comment "los valores de la presion sanguinea estan dados en mmHg (milimetros de mercurio)")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot tiene_h
+		(type INSTANCE)
+;+		(allowed-classes Habito)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot sensacion_cansancio
+;+		(comment "despues de realizar 10 minutos de ejercicio")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PPM2
+;+		(comment "pulsaciones por minuto despues un minuto de carrera sostenida")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PPM1
+;+		(comment "pulsaciones por minuto en reposo")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot presion_sanguinea_max
+;+		(comment "los valores de la presion sanguinea estan dados en mmHg (milimetros de mercurio)")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiene
+		(type INSTANCE)
+;+		(allowed-classes Salud)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot IMC
+;+		(comment "indice de masa corporal calculado")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot solicita
+		(type INSTANCE)
+;+		(allowed-classes Programa)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot altura
+;+		(comment "altura en centimetros")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot peso
+;+		(comment "peso en kilogramos")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tirantez_muscular
+;+		(comment "despues de realizar 10 minutos de ejercicio")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot genero
+		(type SYMBOL)
+		(allowed-values femenino masculino)
+		(default masculino)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Programa
+	(is-a USER)
+	(role concrete)
+	(single-slot tiempo_diario
+;+		(comment "tiempo diario en minutos")
+		(type INTEGER)
+		(range 30 1400)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiene_o
+		(type INSTANCE)
+;+		(allowed-classes Objetivo)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Ejercicio
+	(is-a USER)
+	(role concrete)
+	(single-slot num_calorias
+;+		(comment "número de calorías estimadas a perder con el ejercicio")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot combina_con
+		(type INSTANCE)
+;+		(allowed-classes Ejercicio)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiempo_max
+;+		(comment "tiempo max en minutos")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tiempo_min
+;+		(comment "tiempo en minutos")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad_min
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot es_recomendado
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ejercita
+		(type INSTANCE)
+;+		(allowed-classes Grupo_muscular)
+		(create-accessor read-write))
+	(multislot puede_contraindicar
+		(type INSTANCE)
+;+		(allowed-classes Problema_salud)
+		(create-accessor read-write))
+	(single-slot edad_max
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre_ejercicio
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot repeticiones_max
+;+		(comment "numero de repeticiones maximo del ejercicio")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot descripcion
+;+		(comment "detalle del ejercicio")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot repeticiones_min
+;+		(comment "numero de repeticiones minimas del ejercicio")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parte_de_2
+		(type INSTANCE)
+;+		(allowed-classes Secuencia)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot tiene_ob
+		(type INSTANCE)
+;+		(allowed-classes Objetivo)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot dificultad
+		(type SYMBOL)
+		(allowed-values baja media alta)
+		(default media)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot aparato
+		(type SYMBOL)
+		(allowed-values bicicleta_electrica footer pesas soga mancuerna cinta remo barra)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Aerobicos
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Fuerza_resistencia
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Suelo
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Estiramiento
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Precalentamiento
+	(is-a Ejercicio)
+	(role concrete))
+
+(defclass Secuencia
+	(is-a USER)
+	(role concrete)
+	(single-slot secuencia_descanso
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot dia_semana
+;+		(comment "A que dia de la semana pertenece esa secuencia. Deben haber dias para descansar")
+		(type SYMBOL)
+		(allowed-values lunes martes miercoles jueves viernes sabado domingo)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parte_de_1
+		(type INSTANCE)
+;+		(allowed-classes Programa)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Objetivo
+	(is-a USER)
+	(role concrete)
+	(single-slot descripcion_obj
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Salud
+	(is-a USER)
+	(role concrete)
+	(single-slot intensidad_inicial
+;+		(comment "Nivel de Intensidad inicial de ejercicio al que el usuario está acostumbrado. Depende de sus habitos")
+		(type SYMBOL)
+		(allowed-values baja media alta)
+		(default baja)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Habito
+	(is-a USER)
+	(role concrete)
+	(single-slot duracion
+;+		(comment "duracion aproximada en minutos del habito")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot frecuencia
+		(type SYMBOL)
+		(allowed-values ocasional frecuente pocas_veces)
+		(default frecuente)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass En_Trabajo
+	(is-a Habito)
+	(role concrete)
+	(single-slot esfuerzo_musc
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot desplazamiento_pie
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot levantamiento_peso
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sentado
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot mov_repet
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot de_pie
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Fuera_Trabajo
+	(is-a Habito)
+	(role concrete)
+	(single-slot tareas_domesticas
+;+		(comment "actividades como planchar, barrer, fregar, colada")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot desplazamientos
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot act_estaticas
+;+		(comment "actividades como mirar television, lectura, chat, juegos en linea")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Dieta
+	(is-a USER)
+	(role concrete)
+	(single-slot consumo_fruta
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_gaseosa
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_carbohidratos
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_proteina
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_agua
+		(type SYMBOL)
+		(allowed-values muy_poco poco frecuente)
+		(default frecuente)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_grasa
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_verduras
+		(type SYMBOL)
+		(allowed-values bajo normal elevado)
+		(default normal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot consumo_picante
+		(type SYMBOL)
+		(allowed-values nunca_o_muy_poco frecuente mucho)
+		(default nunca_o_muy_poco)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parte_de_4
+		(type INSTANCE)
+;+		(allowed-classes Salud)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot abuso_sal
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Problema_salud
+	(is-a USER)
+	(role concrete)
+	(single-slot relativo_a
+		(type INSTANCE)
+;+		(allowed-classes Grupo_muscular)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot malestar
+		(type SYMBOL)
+		(allowed-values escoliosis lordosis cifosis tendinitis_hombro dolor_articular cervical dolor_espalda)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parte_de_3
+		(type INSTANCE)
+;+		(allowed-classes Salud)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Grupo_muscular
+	(is-a USER)
+	(role concrete)
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))

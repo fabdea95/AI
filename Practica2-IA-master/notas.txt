@@ -1,0 +1,5 @@
+-para crear la imagen de la ontologia...
+	-pegar la ubicacion del ejecutable dot.exe del programa graphViz en el path del sistema
+	-abrir terminal en la ubicacion de los archivos de la ontologia
+	-escribir y ejecutar el siguiente comando:
+		dot -o ontologia_pic.jpg -Tjpg Ontologia_Practica2_IA_dea.dot-input
