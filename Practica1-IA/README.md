@@ -1,4 +1,5 @@
-"# Practica-1-IA" 
+"# Practica-1-IA: Búsqueda Local" 
+Fabio De Angelis - Daniel Moreno - Solange Palomino
 
 Pasos para la ejecución de la práctica
 
@@ -18,8 +19,3 @@ Pasos para la ejecución de la práctica
 	
 	En este caso, la semilla es 1234
 
-
------Desde un IDE-----
-
-
-2.
